@@ -7,7 +7,7 @@ import { CONTRACT_ADDRESS, CONTRACT_ABI } from '../config/contracts';
 import { encryptLocationText } from '../utils/encryption';
 import '../styles/RecordLocation.css';
 
-const PLACEHOLDER_ADDRESS = '0x0000000000000000000000000000000000000000';
+// const PLACEHOLDER_ADDRESS = '0x0000000000000000000000000000000000000000';
 
 interface RecordLocationProps {
   onRecorded?: () => void;
@@ -26,7 +26,7 @@ export function RecordLocation({ onRecorded }: RecordLocationProps) {
   const [ephemeralAddress, setEphemeralAddress] = useState<string | null>(null);
   const [encryptedPreview, setEncryptedPreview] = useState<string | null>(null);
 
-  const isConfigured = CONTRACT_ADDRESS !== PLACEHOLDER_ADDRESS;
+  const isConfigured = true;
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();

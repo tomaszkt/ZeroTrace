@@ -6,7 +6,7 @@ import { CONTRACT_ADDRESS, CONTRACT_ABI } from '../config/contracts';
 import { decryptLocationText } from '../utils/encryption';
 import '../styles/LocationEntries.css';
 
-const PLACEHOLDER_ADDRESS = '0x0000000000000000000000000000000000000000';
+// const PLACEHOLDER_ADDRESS = '0x0000000000000000000000000000000000000000';
 
 interface LocationEntry {
   index: number;
@@ -38,7 +38,7 @@ export function LocationEntries({ refreshKey }: LocationEntriesProps) {
   const [decryptError, setDecryptError] = useState<string | null>(null);
   const [decryptedMap, setDecryptedMap] = useState<Record<number, DecryptedEntry>>({});
 
-  const isConfigured = CONTRACT_ADDRESS !== PLACEHOLDER_ADDRESS;
+  const isConfigured = true;
 
   useEffect(() => {
     if (!address || !publicClient || !isConfigured) {
