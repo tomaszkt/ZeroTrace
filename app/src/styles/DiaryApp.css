@@ -1,0 +1,70 @@
+.diary-app {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.diary-main {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+.connect-card {
+  margin-top: 3rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08);
+}
+
+.connect-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.connect-description {
+  margin: 0;
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+.diary-tabs {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.diary-tab {
+  padding: 0.5rem 0;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.diary-tab.active {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
+}
+
+.diary-tab.inactive {
+  color: #6b7280;
+}
+
+.diary-tab.inactive:hover {
+  color: #374151;
+  border-bottom-color: #cbd5f5;
+}
+
+@media (min-width: 640px) {
+  .diary-main {
+    padding: 3rem 2rem 5rem;
+  }
+}

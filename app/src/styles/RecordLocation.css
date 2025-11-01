@@ -1,0 +1,160 @@
+.record-container {
+  background-color: transparent;
+}
+
+.record-card {
+  background-color: #fff;
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: 0 15px 45px rgba(15, 23, 42, 0.08);
+}
+
+.record-header {
+  margin-bottom: 1.5rem;
+}
+
+.record-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.record-description {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.record-error {
+  background-color: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fee2e2;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.record-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.record-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.record-label {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 0.95rem;
+}
+
+.record-input,
+.record-textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: #111827;
+  background-color: #f9fafb;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  resize: vertical;
+}
+
+.record-input:focus,
+.record-textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+  background-color: #fff;
+}
+
+.record-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.record-button {
+  background-color: #2563eb;
+  border: none;
+  color: #fff;
+  padding: 0.85rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.record-button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.record-button:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 15px 30px rgba(37, 99, 235, 0.25);
+}
+
+.record-status {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #2563eb;
+}
+
+.record-error-inline {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #b91c1c;
+}
+
+.record-success {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: 0.75rem;
+}
+
+.record-success-title {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #075985;
+}
+
+.record-success-text {
+  margin: 0.25rem 0;
+  color: #0369a1;
+  font-size: 0.95rem;
+}
+
+.record-code {
+  display: inline-block;
+  word-break: break-all;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 0.5rem;
+  padding: 0.35rem 0.5rem;
+  font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  font-size: 0.85rem;
+  color: #0f172a;
+}
+
+@media (min-width: 768px) {
+  .record-card {
+    padding: 2.5rem;
+  }
+
+  .record-textarea {
+    min-height: 8rem;
+  }
+}
